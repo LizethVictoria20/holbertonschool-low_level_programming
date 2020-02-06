@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main
- * Description: Print uppercase and lowercase
+ * Description: Print uppercase and lowercase with with new line
  * Return: 0
  */
 int main(void)
