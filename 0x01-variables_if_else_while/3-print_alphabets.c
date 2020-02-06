@@ -5,19 +5,18 @@
  */
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	char letter = 'a';
 
-	while (lower <= 'z')
+	while (letter <= 'z')
 	{
-		putchar(lower);
-		lower++;
+		putchar(letter);
+		letter++;
 	}
-	while (upper <= 'Z')
+	letter = 'A';
+	while (letter <= 'Z')
 	{
-		putchar(upper);
-		upper++;
+		putchar(letter);
+		letter++;
 	}
-	putchar('\n');
 	return (0);
 }
