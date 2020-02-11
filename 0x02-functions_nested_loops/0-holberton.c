@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- * Print Holberton
+ * main - check the code for Holberton School students.
+ *
+ * Return: Holberton and  0.
  */
 int main(void)
 {
