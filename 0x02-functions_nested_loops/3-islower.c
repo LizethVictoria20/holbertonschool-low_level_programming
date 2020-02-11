@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
  * _islower - check the code for Holberton School students.
@@ -7,8 +6,8 @@
  */
 int _islower(int c)
 {
-	if (_islower(c))
-		return (c + '1');
+	if (c >= 'a' && c <= 'z')
+		return (1);
 	else
-		return (c + '0');
+		return (0);
 }
