@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
@@ -9,8 +9,9 @@ int print_last_digit(int n)
 {
 	int last;
 	int m;
+
 	last = n % 10;
-	if(last < 0)
+	if (last < 0)
 	{
 		m = last * -1;
 		_putchar(m + '0');
