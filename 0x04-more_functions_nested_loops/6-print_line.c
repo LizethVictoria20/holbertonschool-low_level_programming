@@ -7,14 +7,13 @@
  */
 void print_line(int n)
 {
-	int lim;
+	int lim = 0;
 
 	if (n > 0)
 	{
-		lim = 1;
 		while (lim <= n)
 		{
-			_putchar(45);
+			_putchar(95);
 			lim++;
 		}
 		_putchar('\n');
