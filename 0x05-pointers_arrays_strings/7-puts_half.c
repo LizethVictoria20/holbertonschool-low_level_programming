@@ -17,10 +17,13 @@ void puts_half(char *str)
 	max = count;
 	half = max / 2;
 
-	while (half <= max)
+	if (str[half] != '\0')
 	{
-		_putchar(str[half]);
-		half++;
+		while (half <= max)
+		{
+			_putchar(str[half]);
+			half++;
+		}
 	}
 	_putchar('\n');
 }
