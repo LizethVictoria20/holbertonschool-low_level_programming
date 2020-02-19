@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _strcpy - check the code for Holberton School students.
  * @dest: Pointer
  * @src: Pointer
  * Return: Always 0.
@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 	int letter = 0;
 	int i;
 
-	while (src[letter] != '\0')
+	while (src[letter] != 0)
 	{
 		letter++;
 	}
@@ -22,7 +22,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	for ( ; i == letter; i++)
 	{
-		dest[i] = '\0';
+		dest[i] = 0;
 	}
 	return (dest);
 }
