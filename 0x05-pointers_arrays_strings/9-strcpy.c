@@ -2,7 +2,8 @@
 
 /**
  * main - check the code for Holberton School students.
- *
+ * @dest: Pointer
+ * @src: Pointer
  * Return: Always 0.
  */
 char *_strcpy(char *dest, char *src)
@@ -15,11 +16,11 @@ char *_strcpy(char *dest, char *src)
 		letter++;
 	}
 
-	for (i = 0; i < letter && src[i] != '\0'; i++)
+	for (i = 0; i <= letter; i++)
 	{
 		dest[i] = src[i];
 	}
-	for ( ; i < letter; i++)
+	for ( ; i == letter; i++)
 	{
 		dest[i] = '\0';
 	}
