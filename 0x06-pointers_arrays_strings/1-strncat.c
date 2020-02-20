@@ -1,8 +1,10 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * *_strcat - check the code for Holberton School students.
+ * @src: Pointer
+ * @dest: Pointer
+ * @n: Character
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
