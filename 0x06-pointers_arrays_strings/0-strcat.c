@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strcat - check the code for Holberton School students.
+ * @dest: Pointer
+ * @src: Pointer
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
@@ -13,11 +14,13 @@ char *_strcat(char *dest, char *src)
 	while (src[letterSrc] != 0)
 	{
 		letterSrc++;
-        }
+	}
+
 	while (dest[letterDest] != 0)
 	{
 		letterDest++;
 	}
+
 	for (i = 0; i < letterSrc; i++)
 	{
 		dest[letterDest + i] = src[i];
