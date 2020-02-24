@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * _strspn - check the code for Holberton School students.
  * @s: Pointer
@@ -14,6 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (s[i] != '\0')
 	{
+		j = 0;
 		bef = count;
 
 		while (accept[j] != '\0')
