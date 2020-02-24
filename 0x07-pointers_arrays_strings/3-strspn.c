@@ -26,7 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 			j++;
 		}
 
-		if (count == bef)
+		if (bef == count)
 		{
 			break;
 		}
