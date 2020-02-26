@@ -1,23 +1,43 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - check the code for Holberton School students.
- * @n: Variable
+ * _square - check the code for Holberton School students.
+ * @a: Variable
+ * @b: Variable
  * Return: Always 0.
  */
 
+int _square(int a, int b)
+{
+	if (a == (b * b))
+	{
+		return (b);
+	}
+	if (b * b > a)
+	{
+		return (-1);
+	}
+	return (_square(a, b + 1));
+}
+
 /**
-Write a function that returns the natural square root of a number.
-
-Prototype: int _sqrt_recursion(int n);
-If n does not have a natural square root, the function should return -1*/
-
+ * _sqrt_recursion - Function
+ * @n: Variable
+ * Return: Always 0.
+ */
 int _sqrt_recursion(int n)
 {
-	int b;
-	if (b == (n * n))
-		return (n);
-	if (n  * n  >  b)
+	if (n == 1)
+	{
+		return (1);
+	}
+	if (n == 0)
+	{
+		return (0);
+	}
+	if (n < 1)
+	{
 		return (-1);
-	return (_sqrt_recursion(n + 1));
+	}
+	return (_square(n, 1));
 }
