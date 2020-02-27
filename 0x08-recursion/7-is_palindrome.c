@@ -48,7 +48,7 @@ int aux_palin(char *s, int i, int len)
  */
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(*s);
+	int len = _strlen_recursion(s);
 
-	return (aux_palin(*s, i, len));
+	return (aux_palin(s, 0, len - 1));
 }
