@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * is_prime - check the code for Holberton School students.
+ * @a: Variable
+ * @b: Variable
  * Return: Always 0.
  */
 int is_prime(int a, int b)
@@ -19,8 +20,8 @@ int is_prime(int a, int b)
 	return (is_prime(a, b + 1));
 }
 /**
- * main - check the code for Holberton School students.
- *
+ * is_prime_number - check the code for Holberton School students.
+ * @n: Variable
  * Return: Always 0.
  */
 int is_prime_number(int n)
