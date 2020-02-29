@@ -29,4 +29,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", suma);
+	return (0);
 }
