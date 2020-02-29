@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ * _strncat - check the code for Holberton School students.
+ * @src: Pointer
+ * @dest: Pointer
+ * @n: Character
+ * Return: Always 0.
+ */
+int _atoi(char *s)
+{
+	int i = *s;
+	return (i);
+}
