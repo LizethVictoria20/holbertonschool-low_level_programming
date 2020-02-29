@@ -12,15 +12,15 @@ int main(int argc, char *argv[])
 	int i;
 	int suma;
 
+	if (argv == 0)
+	{
+		printf("0");
+	}
 	for (i = 1; i < argc; i++)
 	{
 		if (*argv[i] >= '0' && *argv[i] <= '9')
 		{
 			suma += atoi(argv[i]);
-		}
-		else if (*argv[i] == 0)
-		{
-			printf("0");
 		}
 		else
 		{
