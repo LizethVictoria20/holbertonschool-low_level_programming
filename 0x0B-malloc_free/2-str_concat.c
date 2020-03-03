@@ -39,10 +39,10 @@ char *str_concat(char *s1, char *s2)
 		return ("");
 	}
 	size1 = strleng(s1);
-	size2 = strleng(s2) + 1;
+	size2 = strleng(s2);
 	strConc = size1 + size2;
 
-	s =  malloc(sizeof(char) * strConc);
+	s =  malloc(sizeof(char) * strConc + 1);
 
 	if (s == NULL)
 	{
