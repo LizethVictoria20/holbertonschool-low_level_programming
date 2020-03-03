@@ -10,11 +10,10 @@
  */
 int strleng(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != 0)
+	for (i = 0; str && str[i]; i++)
 	{
-		i++;
 	}
 	return (i);
 }
@@ -30,14 +29,6 @@ char *str_concat(char *s1, char *s2)
 	int size1, size2, strConc, i;
 	char *s;
 
-	if (s1 == NULL)
-	{
-		return ("");
-	}
-	if (s2 == NULL)
-	{
-		return ("");
-	}
 	size1 = strleng(s1);
 	size2 = strleng(s2);
 	strConc = size1 + size2;
@@ -47,11 +38,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size1; i++)
+	for (i = 0; s1 && s1[i]; i++)
 	{
 		s[i] = s1[i];
 	}
-	for (i = 0; i < size2; i++)
+	for (i = 0; s2 && s2[i]; i++)
 	{
 		s[i + size1] = s2[i];
 	}
