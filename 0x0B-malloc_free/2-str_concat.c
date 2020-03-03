@@ -32,20 +32,22 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		return ("");
 	}
 	if (s2 == NULL)
 	{
-		return (NULL);
+		return ("");
 	}
-
 	size1 = strleng(s1);
 	size2 = strleng(s2) + 1;
 	strConc = size1 + size2;
 
 	s =  malloc(sizeof(char) * strConc);
-	i = 0;
 
+	if (s == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < size1; i++)
 	{
 		s[i] = s1[i];
