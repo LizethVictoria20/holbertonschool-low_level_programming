@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - prints 2 dimensional array
- * @width: width of the grid
+ * free_grid - prints 2 dimensional array
+ * @grid: Grid
  * @height: height of the grid
  *
  * Return: Nothing.
