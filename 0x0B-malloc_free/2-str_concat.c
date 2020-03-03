@@ -30,6 +30,15 @@ char *str_concat(char *s1, char *s2)
 	int size1, size2, strConc, i;
 	char *s;
 
+	if (s1 == NULL)
+	{
+		return (NULL);
+	}
+	if (s2 == NULL)
+	{
+		return (NULL);
+	}
+
 	size1 = strleng(s1);
 	size2 = strleng(s2) + 1;
 	strConc = size1 + size2;
