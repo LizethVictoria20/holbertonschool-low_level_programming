@@ -19,8 +19,10 @@ int strleng(char *str)
 }
 
 /**
- * main - check the code for Holberton School students.
- *
+ * string_nconcat - check the code for Holberton School students.
+ *@s1: Pointer
+ *@s2: Pointer
+ *@n: Size
  * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
