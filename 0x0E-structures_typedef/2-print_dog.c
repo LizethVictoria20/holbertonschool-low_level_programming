@@ -1,11 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * init_dog - Prototype about type dog
+ * print_dog - Prototype about type dog
  * @d: First member
- * @name: Second member
- * @age: Third member
- * @owner: 3 member
  * Description: Longer description
  */
 
@@ -18,7 +15,7 @@ void print_dog(struct dog *d)
 	}
 	if (d->name == NULL)
 	{
-		printf("Name: (nail)");
+		printf("Name: (nail)\n");
 	}
 	else
 	{
@@ -27,7 +24,7 @@ void print_dog(struct dog *d)
 	printf("Age: %f\n", d->age);
 	if (d->owner == NULL)
 	{
-		printf("Owner: (nail)");
+		printf("Owner: (nail)\n");
 	}
 	else
 	{
