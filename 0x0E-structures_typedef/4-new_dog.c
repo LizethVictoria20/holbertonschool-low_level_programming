@@ -1,29 +1,31 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
-#include <stdlib.h>
 
 /**
- * _strlen - check the code for Holberton School students.
- * @s: Pointer
- * Return: Always 0.
+ * _strlen - return length of a string
+ *
+ * @s: char type
+ * Return:  length of string
  */
+
 int _strlen(char *s)
 {
-	int c = 0;
+	int a;
 
-	while (s[c] != '\0')
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		c++;
-	}
-	return (c);
-}
 
+	}
+	return (a);
+}
 /**
- * _strcpy - check the code for Holberton School students.
- * @dest: Pointer
- * @src: Pointer
- * Return: Always 0.
+ * _strcpy - function to copy string from source to destination
+ *@dest: pointer to destinatioin of string to be copied
+ *@src: pointer to source of string to be copied
+ * Return: return the value at dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int a;
@@ -35,7 +37,6 @@ char *_strcpy(char *dest, char *src)
 	dest[a] = '\0';
 	return (dest);
 }
-
 /**
  * *new_dog - function to create new dog struct
  * @name: char type
@@ -43,6 +44,7 @@ char *_strcpy(char *dest, char *src)
  * @owner: char type
  * Return: Always success
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newd;
