@@ -2,11 +2,11 @@
 #define HEADER_FUNCTION_H
 #include <stdarg.h>
 
-typedef struct pter
+typedef struct op
 {
-	char *test;
-	void (*printer)();
-} pt;
+	char c;
+	void (*f)(va_list);
+} op_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
