@@ -1,4 +1,16 @@
 #include "lists.h"
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+
 /**
  * *add_node - function to add node to start
  * @head: pointer to pointer of list_t struct type
@@ -7,9 +19,8 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new = NULL;
+	list_t *new;
 	int length;
-	char *string;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -20,12 +31,11 @@ list_t *add_node(list_t **head, const char *str)
 
 	while (str[length] != '\0')
 	{
-		string = strdup(str);
 		length++;
 	}
 
 	new->len = length;
-	new->str = string;
+	new->str = strdup(str);
 	new->next = *head;
 	*head = new;
 
