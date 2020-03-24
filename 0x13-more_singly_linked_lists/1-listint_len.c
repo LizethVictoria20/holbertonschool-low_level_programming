@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * print_listint - Function that prints all elements from the list.
- * @h: Elements
+ * listint_len - Function that prints all elements from the list.
+ * @h: Elements listint_t
  * Return: Always 0.
  */
 
