@@ -40,14 +40,14 @@ int main(int ac, char **argv)
 	from_file = open(argv[1], O_RDONLY);
 	if (from_file == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	to_file = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 
 	if (to_file == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	for (read_file = 1024; read_file == 1024;)
