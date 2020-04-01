@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *space;
-	ssize_t fdread, fdwrite;
+	ssize_t fdread, fdwrite, fdclose;
 
 	if (filename == NULL)
 	{
@@ -41,6 +41,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fdwrite = write(STDOUT_FILENO, space, fdread);
 
 	if (fdwrite == -1)
+	{
+		return (-1);
+	}
+
+	fdclose = close(fd);
+
+	if (fdclose == -1)
 	{
 		return (-1);
 	}
