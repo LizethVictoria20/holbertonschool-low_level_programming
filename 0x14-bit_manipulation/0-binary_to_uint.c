@@ -1,40 +1,31 @@
 #include "holberton.h"
 #include <stdio.h>
-
 /**
- * binary_to_uint - Function that converts a binary number to decimal.
- * @b: Elements
- * Return: Always 0.
+ * binary_to_uint - function to convert binary to unsigned int
+ * @b: pointer to char string input
+ * Return: always successful
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int binary = 1;
 	unsigned int count = 0;
+	unsigned int check = 1;
+	int x;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
-
-	for (i = 0; b[i] != '\0'; i++)
+	x = 0;
+	while (b[x] != '\0')
 	{
-		if (b[i] != '1' && b[i] != '0')
+		if (b[x] != '0' && b[x] != '1')
 		{
 			return (0);
 		}
-	}
-	i--;
-
-	while (i >= 0)
-	{
-		if (b[i] == '1')
+		count <<= 1;
+		if (b[x] == '1')
 		{
-			count += binary;
+			count ^= check;
 		}
-		binary *= 2;
-		i--;
+		x++;
 	}
 	return (count);
 }
