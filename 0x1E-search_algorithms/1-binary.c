@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * linear_search - Function linear search
+ * binary_search - Function linear search
  * @array: Array is a pointer to the first element
  * @size: Size is the number of elements in array
  * @value: Value is the value to search for
